@@ -13974,6 +13974,27 @@ a.anchor-link {
 <p><a href="https://colab.research.google.com/github/bknudson1/bknudson1.github.io/blob/main/milestone1.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
 
 </div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><a href="https://bknudson1.github.io/">Notebook</a></p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>We are considering working with the U.S. Bureau of Labor Statistics Data to gain a deeper understanding of the effect COVID-19 had on the economy and employment in the United States. So far we have looked at the following sub-data sets: <br /></p>
+<ul>
+<li>Unemployment rates from  2011-2021, <br /></li>
+<li>CPI (consumer price index) for all urban consumers from 2011-2021, <br /></li>
+<li>Import price index from 2011-2021, <br /></li>
+<li>PPI (producer price index) from 2011-2021, <br /></li>
+<li>Average hourly earnings of all employees from 2011-2021, <br /></li>
+<li>Total employment from 2011-2021. <br /></li>
+</ul>
+<p>We could cross reference this with COVID news and policy to see what affected the economy and employment the most, in the United States or on a global scale. There is a “corona virus timeline” on the New York Times that documents pivotal news stories on covid over the last 2 years. We could try and find correlations between the Bureau of Labor Statistics stats and these moments in time (i.e, did CPI drop during strict travel restrictions in the US?). This database is extensive, so we will have a lot of flexibility for data within the United States. It may be more difficult to get reliable data from other countries. Another way we could approach this would be to compare the economy during the recession in the late 2000s to the economy during the pandemic. Or, we could compare data recorded during COVID to extreme influenza outbreaks like the swine flu and avian flu if we were to focus on the US, or the Zika virus or Ebola if we were to expand our research. We could explore the economic impact that various diseases have had on a global scale. It might make the most sense to explore a few avenues of inquiry before we settle. Since we have a group of three, we might be able to cover more ground. The European Commission also offers thorough labor and economy statistics if we wanted to scale up our project, sourcing this data from countries like China or Russia may be problematic though. Though it might mean scraping new data, it also might be interesting to investigate some of the extreme changes that have happened on the stock market over the years, things like oil stocks and physical gold have had record ups and downs throughout the chaos of corona virus. Perhaps we could look at correlations between the percentage of people vaccinated and unemployment rates/CPI, the general idea being that the more people are vaccinated the looser the restrictions on things like travel and restaurants which could stimulate the economy and create more jobs.</p>
+
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -14191,7 +14212,7 @@ a.anchor-link {
 <span class="n">prettyTable</span> <span class="o">=</span> <span class="n">table</span><span class="o">.</span><span class="n">prettify</span><span class="p">()</span>
 <span class="n">dfs_cpi</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_html</span><span class="p">(</span><span class="n">prettyTable</span><span class="p">)</span>
 <span class="n">df_cpi</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">dfs_cpi</span><span class="p">)</span>
-<span class="n">df_cpi</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n">df_cpi</span>
 </pre></div>
 
      </div>
@@ -14335,6 +14356,114 @@ a.anchor-link {
       <td>237.733</td>
       <td>238.017</td>
       <td>237.761</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>2016</td>
+      <td>237.652</td>
+      <td>237.336</td>
+      <td>238.080</td>
+      <td>238.992</td>
+      <td>239.557</td>
+      <td>240.222</td>
+      <td>240.101</td>
+      <td>240.545</td>
+      <td>241.176</td>
+      <td>241.741</td>
+      <td>242.026</td>
+      <td>242.637</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>2017</td>
+      <td>243.620</td>
+      <td>243.872</td>
+      <td>243.766</td>
+      <td>244.274</td>
+      <td>244.069</td>
+      <td>244.218</td>
+      <td>244.280</td>
+      <td>245.205</td>
+      <td>246.551</td>
+      <td>246.657</td>
+      <td>247.378</td>
+      <td>247.736</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>2018</td>
+      <td>248.721</td>
+      <td>249.300</td>
+      <td>249.517</td>
+      <td>250.275</td>
+      <td>250.786</td>
+      <td>251.152</td>
+      <td>251.345</td>
+      <td>251.735</td>
+      <td>252.183</td>
+      <td>252.899</td>
+      <td>252.822</td>
+      <td>252.493</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>2019</td>
+      <td>252.441</td>
+      <td>252.969</td>
+      <td>254.147</td>
+      <td>255.326</td>
+      <td>255.371</td>
+      <td>255.423</td>
+      <td>255.925</td>
+      <td>256.118</td>
+      <td>256.532</td>
+      <td>257.387</td>
+      <td>257.989</td>
+      <td>258.203</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>2020</td>
+      <td>258.687</td>
+      <td>258.824</td>
+      <td>257.989</td>
+      <td>256.192</td>
+      <td>255.942</td>
+      <td>257.282</td>
+      <td>258.604</td>
+      <td>259.511</td>
+      <td>260.149</td>
+      <td>260.462</td>
+      <td>260.927</td>
+      <td>261.560</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>2021</td>
+      <td>262.231</td>
+      <td>263.161</td>
+      <td>264.793</td>
+      <td>266.832</td>
+      <td>268.551</td>
+      <td>270.981</td>
+      <td>272.265</td>
+      <td>273.012</td>
+      <td>274.138</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
